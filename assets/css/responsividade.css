@@ -2,6 +2,8 @@
     --primary: #D4354B;
     --secondary: #C14E68;
     --bg: #c14e6965;
+    --bgSecondary: #C14E6865;
+    --fontTitle: 1.5rem;
 }
 
 @media only screen and (max-width: 760px) {
@@ -112,6 +114,10 @@
         overflow-y: hidden;
     }
 
+    .principal .header .navbar .menu-principal .menu-facaParte {
+        background: var(--secondary);
+    }
+
     .principal .header .navbar .menu-principal.active {
         height: calc(100vh - 130px);
         visibility: visible;
@@ -130,5 +136,19 @@
 
     .principal .header .navbar hr {
         display: none;
+    }
+
+    /* BANNER */
+
+    .principal .container-banner .banner {
+        background: url(../img/m_img2.jpeg) no-repeat;
+        height: 282px;
+    }
+
+    .principal .container-banner h1 {
+        bottom: -60px;
+        height: 100px;
+        text-align: center;
+        font-size: var(--fontTitle);
     }
 }
